@@ -1,0 +1,28 @@
+{
+    "name": "usebit/changelly-json-rpc",
+    "description": "Changelly Json RPC wrappers API",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Reinaldo Mendes",
+            "email": "reinaldorock@yahoo.com.br"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+          "Usebit\\Changelly\\": "src/Changelly/"
+      }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+
+    "minimum-stability": "stable",
+    "require": {}
+}
