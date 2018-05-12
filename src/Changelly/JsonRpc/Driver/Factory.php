@@ -1,10 +1,10 @@
 <?php
-namespace Usebit\Changelly\JsonRpc\Driver;
+namespace Rbm\Changelly\JsonRpc\Driver;
 
-use Usebit\Changelly\JsonRpc\Contracts\Driver as DriverContract;
-use Usebit\Changelly\JsonRpc\Contracts\Config as ConfigContract;
-use Usebit\Changelly\JsonRpc\Factory\Exception\InvalidContract as InvalidContractException;
-use Usebit\Changelly\JsonRpc\Factory\Exception\ClassNotFound as ClassNotFoundException;
+use Rbm\Changelly\JsonRpc\Contracts\Driver as DriverContract;
+use Rbm\Changelly\JsonRpc\Contracts\Config as ConfigContract;
+use Rbm\Changelly\JsonRpc\Factory\Exception\InvalidContract as InvalidContractException;
+use Rbm\Changelly\JsonRpc\Factory\Exception\ClassNotFound as ClassNotFoundException;
 class Factory {
   /**
    * Create the wrapper for API changelly with correct driver
@@ -24,7 +24,7 @@ class Factory {
      * @return DriverContract         a config contract instance
      */
     protected function createDriver($type,ConfigContract $config){
-      $configNamespace = "Usebit\\Changelly\\JsonRpc\Driver\\";
+      $configNamespace = "Rbm\\Changelly\\JsonRpc\Driver\\";
       $contract = DriverContract::class;
       if(class_exists($type)){
         $class = $type;

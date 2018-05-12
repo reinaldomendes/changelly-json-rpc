@@ -1,11 +1,11 @@
 <?php
-namespace Usebit\Changelly\JsonRpc;
+namespace Rbm\Changelly\JsonRpc;
 
-use Usebit\Changelly\JsonRpc\Config\Factory as ConfigFactory;
-use Usebit\Changelly\JsonRpc\Contracts\Driver as DriverContract;
-use Usebit\Changelly\JsonRpc\Contracts\Config as ConfigContract;
-use Usebit\Changelly\JsonRpc\Driver\Factory as DriverFactory;
-use Usebit\Changelly\JsonRpc\Wrapper\Api as ApiWrapper;
+use Rbm\Changelly\JsonRpc\Config\Factory as ConfigFactory;
+use Rbm\Changelly\JsonRpc\Contracts\Driver as DriverContract;
+use Rbm\Changelly\JsonRpc\Contracts\Config as ConfigContract;
+use Rbm\Changelly\JsonRpc\Driver\Factory as DriverFactory;
+use Rbm\Changelly\JsonRpc\Wrapper\Api as ApiWrapper;
 
 class Factory {
     /**
@@ -17,7 +17,7 @@ class Factory {
      *      'config' => ['type' => 'env'],//Array(ConfigFactory::factory(Options)|ConfigContract),
      *      'driver' => ['type' => 'v2'], //Array(DriverFactory::factory(options)|DriverContract)
      *    ]
-     * @return Usebit\Changelly\JsonRpc\Wrapper\Api         Api Wrapper
+     * @return Rbm\Changelly\JsonRpc\Wrapper\Api         Api Wrapper
      */
     public function factory(array $options=[]){
       $configOptions = isset($options['config'])? $options['config'] : ['type' => 'env'];
@@ -29,7 +29,7 @@ class Factory {
 
     /**
      * creates ApiWrapper Instance
-     * @return Usebit\Changelly\JsonRpc\Wrapper\Api [description]
+     * @return Rbm\Changelly\JsonRpc\Wrapper\Api [description]
      */
     protected function createWrapper(DriverContract $driver){
         return new ApiWrapper($driver);
@@ -38,7 +38,7 @@ class Factory {
     /**
      * Create the config instance
      * @param  array|ConfigContract  $options
-     * @return Usebit\Changelly\JsonRpc\Contracts\Config        config instance
+     * @return Rbm\Changelly\JsonRpc\Contracts\Config        config instance
      */
     protected function createConfig($options){
       if($options instanceof ConfigContract){
@@ -52,7 +52,7 @@ class Factory {
     /**
      * create driver contract
      * @param  array|DriverContract  $options
-     * @return Usebit\Changelly\JsonRpc\Contracts\Driver          Driver contract
+     * @return Rbm\Changelly\JsonRpc\Contracts\Driver          Driver contract
      */
     protected function createDriver($options,$configOptions){
       if($options instanceof DriverContract){

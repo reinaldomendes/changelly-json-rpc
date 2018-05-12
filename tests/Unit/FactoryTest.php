@@ -2,10 +2,10 @@
 
 namespace Tests\Unit;
 use Tests\TestCase;
-use Usebit\Changelly\JsonRpc\Factory as JsonRpcFactory;
-use Usebit\Changelly\JsonRpc\Wrapper\Api as ApiWrapper;
-use Usebit\Changelly\JsonRpc\Contracts\Driver as DriverContract;
-use Usebit\Changelly\JsonRpc\Contracts\Config as ConfigContract;
+use Rbm\Changelly\JsonRpc\Factory as JsonRpcFactory;
+use Rbm\Changelly\JsonRpc\Wrapper\Api as ApiWrapper;
+use Rbm\Changelly\JsonRpc\Contracts\Driver as DriverContract;
+use Rbm\Changelly\JsonRpc\Contracts\Config as ConfigContract;
 
 
 class FactoryTest extends TestCase{

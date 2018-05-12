@@ -1,0 +1,22 @@
+{
+  "name": "changelly-json-rpc",
+  "version": "0.0.4",
+  "description": " conventional-changelog standard-version",
+  "main": " ",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "release": "standard-version"
+  },
+  "repository": {},
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reinaldomendes/changelly-json-rpc/issues"
+  },
+  "homepage": "https://github.com/reinaldomendes/changelly-json-rpc#readme",
+  "devDependencies": {
+    "standard-version": "^4.3.0"
+  }
+}

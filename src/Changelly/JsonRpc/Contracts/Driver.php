@@ -1,7 +1,7 @@
 <?php
 
-namespace Usebit\Changelly\JsonRpc\Contracts;
-use Usebit\Changelly\JsonRpc\Contracts\Config as ConfigContract;
+namespace Rbm\Changelly\JsonRpc\Contracts;
+use Rbm\Changelly\JsonRpc\Contracts\Config as ConfigContract;
 
 interface Driver {
 

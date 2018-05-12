@@ -1,7 +1,7 @@
 <?php
 
-namespace Usebit\Changelly\JsonRpc\Driver\Exception;
-use Usebit\Changelly\JsonRpc\Driver\Exception as DriverException;
+namespace Rbm\Changelly\JsonRpc\Driver\Exception;
+use Rbm\Changelly\JsonRpc\Driver\Exception as DriverException;
 class Unauthorized extends DriverException {
 
 }

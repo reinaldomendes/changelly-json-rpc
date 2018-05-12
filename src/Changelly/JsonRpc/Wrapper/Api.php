@@ -1,7 +1,7 @@
 <?php
-namespace Usebit\Changelly\JsonRpc\Wrapper;
+namespace Rbm\Changelly\JsonRpc\Wrapper;
 
-use Usebit\Changelly\JsonRpc\Contracts\Driver as DriverContract;
+use Rbm\Changelly\JsonRpc\Contracts\Driver as DriverContract;
 use InvalidArgumentException;
 class Api {
     /**
@@ -37,7 +37,7 @@ class Api {
 
       $id = array_reduce($arguments,function($acc,$next){
         return is_scalar($next) ? $next : $acc;
-      },uniqid('usebit_'));
+      },uniqid('Rbm_'));
 
       $options = [
         'method' => $name,

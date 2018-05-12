@@ -2,11 +2,11 @@
 
 namespace Tests\Unit\Wrapper;
 use Tests\TestCase;
-use Usebit\Changelly\JsonRpc\Wrapper\Api as ApiWrapper;
-use Usebit\Changelly\JsonRpc\Contracts\Driver as DriverContract;
+use Rbm\Changelly\JsonRpc\Wrapper\Api as ApiWrapper;
+use Rbm\Changelly\JsonRpc\Contracts\Driver as DriverContract;
 
-// use Usebit\Changelly\JsonRpc\Factory\Exception\InvalidContract as InvalidContractException;
-// use Usebit\Changelly\JsonRpc\Factory\Exception\ClassNotFound as ClassNotFoundException;
+// use Rbm\Changelly\JsonRpc\Factory\Exception\InvalidContract as InvalidContractException;
+// use Rbm\Changelly\JsonRpc\Factory\Exception\ClassNotFound as ClassNotFoundException;
 
 class ApiTest extends TestCase{
   public function setup(){

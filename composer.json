@@ -1,9 +1,16 @@
 {
-    "name": "usebit/changelly-json-rpc",
+    "name": "reinaldomendes/changelly-json-rpc",
     "description": "Changelly Json RPC wrappers API",
+    "keywords" : [
+      "Bitcoin",
+      "Changelly",
+      "JSONRPC",
+      "Wrapper-library",
+      "Wrapper-api"
+    ],
     "type": "library",
     "require-dev": {
-        "phpunit/phpunit": "^6.5"
+        "phpunit/phpunit": "^4.8"
     },
     "license": "MIT",
     "authors": [
@@ -14,7 +21,7 @@
     ],
     "autoload": {
       "psr-4": {
-          "Usebit\\Changelly\\": "src/Changelly/"
+          "Rbm\\Changelly\\": "src/Changelly/"
       }
     },
     "autoload-dev": {

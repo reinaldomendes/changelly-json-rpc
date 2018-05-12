@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\Config;
 use Tests\TestCase;
-use Usebit\Changelly\JsonRpc\Config\Env as Config;
+use Rbm\Changelly\JsonRpc\Config\Env as Config;
 
 class EnvTest extends TestCase{
 

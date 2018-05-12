@@ -2,11 +2,11 @@
 
 namespace Tests\Unit\Driver;
 use Tests\TestCase;
-use Usebit\Changelly\JsonRpc\Driver\V2 as V2Driver;
-// use Usebit\Changelly\JsonRpc\Contracts\Driver as DriverContract;
-use Usebit\Changelly\JsonRpc\Contracts\Config as ConfigContract;
-use Usebit\Changelly\JsonRpc\Factory\Exception\InvalidContract as InvalidContractException;
-use Usebit\Changelly\JsonRpc\Factory\Exception\ClassNotFound as ClassNotFoundException;
+use Rbm\Changelly\JsonRpc\Driver\V2 as V2Driver;
+// use Rbm\Changelly\JsonRpc\Contracts\Driver as DriverContract;
+use Rbm\Changelly\JsonRpc\Contracts\Config as ConfigContract;
+use Rbm\Changelly\JsonRpc\Factory\Exception\InvalidContract as InvalidContractException;
+use Rbm\Changelly\JsonRpc\Factory\Exception\ClassNotFound as ClassNotFoundException;
 
 class V2Test extends TestCase{
   public function setup(){
@@ -25,7 +25,7 @@ class V2Test extends TestCase{
 
   /**
    * @test
-   * @expectedException Usebit\Changelly\JsonRpc\Driver\Exception\Unauthorized
+   * @expectedException Rbm\Changelly\JsonRpc\Driver\Exception\Unauthorized
    *
    */
   public function it_will_throw_unauthorized_exception(){
@@ -37,7 +37,7 @@ class V2Test extends TestCase{
   /**
    * @test
    *
-   * @expectedException Usebit\Changelly\JsonRpc\Driver\Exception
+   * @expectedException Rbm\Changelly\JsonRpc\Driver\Exception
    */
   public function it_will_throw_driver_exception(){
     $driver = $this->driverMock;
@@ -112,7 +112,7 @@ class V2Test extends TestCase{
               ->method('getApiUrl')->willReturn('http://www.yahoo.com.br/');
       try{
         $driver->call(['oi' => 'message']);
-      }catch(\Usebit\Changelly\JsonRpc\Driver\Exception $e){
+      }catch(\Rbm\Changelly\JsonRpc\Driver\Exception $e){
 
       }
    }

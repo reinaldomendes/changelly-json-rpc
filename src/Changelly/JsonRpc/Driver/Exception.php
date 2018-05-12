@@ -1,6 +1,6 @@
 <?php
-namespace Usebit\Changelly\JsonRpc\Driver;
-use Usebit\Changelly\JsonRpc\AbstractException;
+namespace Rbm\Changelly\JsonRpc\Driver;
+use Rbm\Changelly\JsonRpc\AbstractException;
 class Exception extends AbstractException {
 
 }

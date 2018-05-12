@@ -1,5 +1,5 @@
 <?php
-namespace Usebit\Changelly\JsonRpc;
+namespace Rbm\Changelly\JsonRpc;
 
 use RuntimeException;
 

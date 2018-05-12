@@ -1,8 +1,8 @@
 <?php
 
-namespace Usebit\Changelly\JsonRpc\Config;
+namespace Rbm\Changelly\JsonRpc\Config;
 
-use Usebit\Changelly\JsonRpc\Contracts\Config as ConfigContract;
+use Rbm\Changelly\JsonRpc\Contracts\Config as ConfigContract;
 
 /**
  * Get the config API changelly from ENV VARIABLES;

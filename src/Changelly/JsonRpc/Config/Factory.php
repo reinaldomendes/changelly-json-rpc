@@ -1,9 +1,9 @@
 <?php
-namespace Usebit\Changelly\JsonRpc\Config;
+namespace Rbm\Changelly\JsonRpc\Config;
 
-use Usebit\Changelly\JsonRpc\Contracts\Config as ConfigContract;
-use Usebit\Changelly\JsonRpc\Factory\Exception\InvalidContract as InvalidContractException;
-use Usebit\Changelly\JsonRpc\Factory\Exception\ClassNotFound as ClassNotFoundException;
+use Rbm\Changelly\JsonRpc\Contracts\Config as ConfigContract;
+use Rbm\Changelly\JsonRpc\Factory\Exception\InvalidContract as InvalidContractException;
+use Rbm\Changelly\JsonRpc\Factory\Exception\ClassNotFound as ClassNotFoundException;
 class Factory {
   /**
    * Create the wrapper for API changelly with correct driver
@@ -23,7 +23,7 @@ class Factory {
      * @return ConfigContract         a config contract instance
      */
     protected function createConfig($type,array $options = []){
-      $configNamespace = "Usebit\\Changelly\\JsonRpc\Config\\";
+      $configNamespace = "Rbm\\Changelly\\JsonRpc\Config\\";
       $contract = ConfigContract::class;
       if(class_exists($type)){
         $class = $type;

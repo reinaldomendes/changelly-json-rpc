@@ -1,6 +1,6 @@
 <?php
 
-namespace Usebit\Changelly\JsonRpc\Contracts;
+namespace Rbm\Changelly\JsonRpc\Contracts;
 
 
 interface Config {

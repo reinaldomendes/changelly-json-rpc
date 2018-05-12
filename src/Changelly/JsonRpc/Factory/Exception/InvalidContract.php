@@ -1,6 +1,6 @@
 <?php
-namespace Usebit\Changelly\JsonRpc\Factory\Exception;
-use Usebit\Changelly\JsonRpc\Factory\Exception as BaseException;
+namespace Rbm\Changelly\JsonRpc\Factory\Exception;
+use Rbm\Changelly\JsonRpc\Factory\Exception as BaseException;
 class InvalidContract extends BaseException {
 
 }

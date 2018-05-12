@@ -1,10 +1,10 @@
 <?php
 
-namespace Usebit\Changelly\JsonRpc\Driver;
-use Usebit\Changelly\JsonRpc\Contracts\Config as ConfigContract;
-use Usebit\Changelly\JsonRpc\Contracts\Driver as DriverContract;
-use Usebit\Changelly\JsonRpc\Driver\Exception as DriverException;
-use Usebit\Changelly\JsonRpc\Driver\Exception\Unauthorized as UnauthorizedException;
+namespace Rbm\Changelly\JsonRpc\Driver;
+use Rbm\Changelly\JsonRpc\Contracts\Config as ConfigContract;
+use Rbm\Changelly\JsonRpc\Contracts\Driver as DriverContract;
+use Rbm\Changelly\JsonRpc\Driver\Exception as DriverException;
+use Rbm\Changelly\JsonRpc\Driver\Exception\Unauthorized as UnauthorizedException;
 class V2 implements DriverContract{
 
   /**
@@ -54,7 +54,7 @@ class V2 implements DriverContract{
     if( null === $aryResponse){
       switch ($strResponse) {
         case 'Unauthorized':
-          throw new UnauthorizedException($strResponse);
+          throw new UnauthorizedException("'$strResponse' response from changelly. Please check your 'API_KEY' and 'API_SECRET'");
           break;
         default:
           throw new DriverException($strResponse);
